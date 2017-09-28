@@ -1,3 +1,6 @@
+#!/bin/bash
+# Script to process list of cars. They are to be grouped by country and then sorted by name in descending order. The resulting json is then uploaded to s3.
+
 json=$(
   curl 'http://www.carqueryapi.com/api/0.3/?cmd=getMakes' -H 'User-Agent: Carla'
 )
